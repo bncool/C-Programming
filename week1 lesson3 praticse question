@@ -1,0 +1,201 @@
+1.WAP to take two integers as input, calculate and display their sum and product
+#include <stdio.h>
+int main() {
+	int a,b;
+	printf("Enter the two number ");
+	scanf ( "%d%d",&a,&b);
+	printf("the sum of two number is %d",a+b);
+	printf("\nthe product of two number is %d",a*b);
+	return 0;
+}
+
+
+
+2.WAP to ask a user about his name, occupation, age, and GPA of SEE. Display those values as output in different line. 
+
+char name [10],occup [10];
+	 int age;
+	 float gpa;
+	 printf ("enter name and occupation");
+	 scanf("%s%s",&name,&occup);
+	 printf("\n enter age and gpa");
+	 scanf("%d%f",&age,&gpa);
+	 printf("\n name : %s",name);
+	 printf ("\n occup:%s",occup);
+	 printf("\n age: %d",age);
+	 printf("\n gpa :%f",gpa);
+	 return 0;
+
+
+
+
+3.WAP to take principal, time and rate as an input, calculate and display the simple interest
+#include<stdio.h>
+ int main () {
+ 	
+ 	int p,t,r;
+ 	printf ("enter the principle");
+ 	scanf("%d",&p);
+ 	printf ("enter the time");
+ 	scanf ("%d",&t);
+ 	printf("enter the rate");
+ 	scanf("%d",&r);
+ 	printf ("The interset is %f",0.01*p*t*r);
+return 0;
+ }
+
+
+
+
+
+
+
+ 4. WAP to take two integers as input and display their values. Swap the values of those variables, again display the values of those variable after swapping
+ #include <stdio.h>
+ int main () {
+ 	
+   int num1,num2,a;
+   printf("enter the two numbers\n");
+   scanf("%d""%d",&num1,&num2);
+   printf("The first number is %d and num2=%d\n",num1,num2);
+   a = num1;
+   num1=num2;
+   num2=a;
+   printf("num1=%d,num2=%d",num1,num2); 	
+ 	
+ 		return 0;
+ }
+
+
+ 5. WAP to calculate the volume of a sphere: take value of radius as input from user. Use #define preprocessor to define value of pi
+ #include <stdio.h>
+ int main () {
+ #define pie 3.14
+ int r;
+ printf("enter the value of radius");
+ scanf("%d",&r);
+ float vol;
+ vol = 1.3333*pie*pow(r,3) ;
+ printf("the volume of sphere is %f",vol);
+ return 0;
+}
+
+
+
+
+6.WAP to calculate area of a circle, take radius of circle as input. Make use of ‘const’ keyword for the value of p
+#include <stdio.h>
+int main () {
+const float pie = 3.14;
+int r;
+printf ("enter the value of radius");
+scanf("%d",&r);
+float area ;
+area = pie*r*r;
+printf("The area of circle is %f",area);
+return 0;
+}
+
+
+
+7. WAP to find value of quotient and remainder when ‘a’ is divided by ‘b’. Take the values of a & b as an input from user.
+( note: when we divide ‘int’ with ‘int’, we get quotient
+int a=5,b=2;
+int c;
+c=a/b gives ‘2’ not ‘2.5’)
+#include <stdio.h>
+int main ()
+{
+	int a,b,quo,rem;
+	 
+	 printf("enter the divident\n");
+	 scanf("%d",&a);
+	 printf("enter the divisor\n");
+	 scanf("%d",&b);
+	 quo=a/b;
+	 rem=a%b;
+	 printf("the quotient is %d and the reminder is %d",quo,rem);
+	 return 0;
+}
+
+
+
+8.WAP to calculate compound interest: take values of principal, time, rate, and number of times interest is compounded per year as an input from user. You can use pow(), sqrt() functions as per your need. ( you need to include math.h header file to use pow(), sqrt() functions. Search how these function works in google)
+#include <stdio.h>
+#include <math.h>
+ int main ()
+ {
+ 	float p,t,r,n;
+ 	float A,i,a;
+ 	print("enter your principle,time,rate,number of time compunded");
+ 	scanf("%f""%f""%f""%f",&p,&t,&r,&n);
+    //A = p(1+r/100n)^nt
+	// i = A-P
+	r= r*0.01;
+	a = 1+(r/n);
+	A=p*(pow(a,n*t));
+	i = A-p;
+	printf("The compound interest is %f",i); 	
+ 	
+ 	
+ 	return 0;
+ }
+
+
+
+
+
+
+
+
+ 9. WAP a program to calculate the roots of a quadratic equation ax^2+bx+c. Print the roots in output.
+#include <stdio.h>
+#include <math.h>
+ int main () {
+ int a,b,c;
+ //ax^2+bx+c=0
+ printf("enter the value of a of ax^2+bx+c=o, where a is not equal to zero\n");
+ scanf("%d",&a);
+ printf("enter the value of b of ax^2+bx+c=0\n");
+ scanf("%d",&b);
+ printf("enter the value of c of ax^2+bx+c=0\n");
+ scanf("%d",&c);
+ float root1,root2,squareroot;
+ squareroot=sqrt((b*b)-4*a*c);
+ root1=(b+squareroot)/(2*a);
+ root2=(b-squareroot)/(2*a);
+ printf("The square root of %f and %f",root1,root2);
+ return 0; 	
+ 	 }
+
+
+   10.. WAP to take name, age and GPA of three students, display the output in the following format.
+
+
+#include <stdio.h>
+#include <math.h>
+int main () {
+	
+ char name1[10],name2[10],name3[10];
+ int age1,age2,age3;
+ float gpa1,gpa2,gpa3;
+ printf("enter your name,age and gpa of the first person");
+ scanf("%s%d%f",&name1,&age1,&gpa1);
+ printf("enter your name,age and gpa of the second person");
+ scanf("%s%d%f",&name2,&age2,&gpa2);
+ printf("enter your name,age and gpa of the third person");
+ scanf ("%s%d%f",&name3,&age3,&gpa3);
+printf("name\tage\tgpa\n"); 
+ printf("------------------------\n");
+ printf("%s\t%d\t%f\n",name1,age1,gpa1);
+ 
+	printf("%s\t%d\t%f\n",name2,age2,gpa2);
+	printf("%s\t%d\t%f\n",name3,age3,gpa3);
+	
+	
+	
+	return 0;
+}
+
+   
+ 
