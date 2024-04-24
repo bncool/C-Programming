@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <math.h> 
+int main() {
+	float h;
+	printf("enter your height");
+	scanf("%f",&h);
+	if (h>160)
+	{ char occupation[30]; 
+	printf("\n enter your occupation");
+	scanf("%s",&occupation);
+	printf("\n your occupation is %s \t height is %f",occupation,h);
+	
+	}
+	else 
+	{
+		
+		int age;
+		printf("enter your age:");
+		scanf("%d",&age);
+		printf("\n your age is %d \t height if %f",age,h);
+	}
+	return 0;
+}
