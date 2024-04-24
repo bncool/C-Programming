@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <math.h> 
+int main () {
+	int ch1,ch2;
+	printf("for first person\n");
+	printf("enter 1 rock, 2 paper, 3 for scisssors");
+	scanf("%d",&ch1); 
+	printf("for second person\n");
+	printf("enter 1 rock, 2 paper, 3 for scisssors");
+	scanf("%d",&ch2);  
+	if (ch1==ch2) {
+		printf("it is a draw");
+	}
+	
+	else if (ch1==1&&ch2==3 || ch1==2&&ch2==1 || ch1==3&&ch2==2)
+	{printf("the winner is first person");
+	}
+	else {printf("the winner is second person");
+	}
+	
+	
+	return 0;}
