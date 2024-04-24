@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<ctype.h>
+int main () {
+	char ch,a;
+	printf("enter a character\n");
+	scanf("%c",&ch);
+	/*if (isalpha(ch)&&isupper(ch)) {
+	  a = tolower (ch);
+	printf("%c",a);
+	}else if  (isalpha(ch)&&islower(ch)) {
+	  a =	toupper(ch);
+	printf("%c",a);}
+	else {printf("this is other character");}*/
+	
+	
+	if (isalpha(ch)) {
+		if (isupper(ch)) {
+			printf("It is an uppercase\n");
+			printf("It's lowercase is %c",tolower(ch));}
+		else{ printf("It is an lowercase\n");
+		printf("It's uppercase is %c",toupper(ch));}}
+	else {printf("It is not an alphabet");}
+	return 0;}
