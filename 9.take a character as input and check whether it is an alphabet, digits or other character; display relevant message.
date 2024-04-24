@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <ctype.h>
+
+int main () {
+	char ch;
+	printf("\n enter a character\n");
+	scanf("%c",&ch);
+	if (isalpha(ch)) {
+		printf("\n it is an alphabet");
+	}
+	else if (isdigit(ch)) {
+		printf("\n it is an digit");
+	}	
+    else { printf("\n other character");
+	}
+	return 0;
+}
